@@ -1,0 +1,796 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Lexicon - Sidenav</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../css/atlas-font-awesome.css" />
+	<link rel="stylesheet" href="../../css/main.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="../../js/bootstrap.js"></script>
+	<script src="../../js/collapsible-search.js"></script>
+	<script src="../../js/side-navigation.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header class="row" id="headerTopBar">
+			<div class="container">
+				<a class="btn btn-primary" href="#beginContent" id="skipTo">Skip to Content</a>
+
+				<button type="button" class="animated-toggle navbar-toggle">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<h4 class="title"><a href="../..">Lexicon</a> <span class="label label-primary label-sm lexicon-version">v0.1.26</span></h4>
+
+				<div class="dropdown" id="siteConfig">
+	<button class="btn btn-primary btn-sm" data-toggle="dropdown"><i class="icon-cog"></i></button>
+	<ul class="dropdown-menu dropdown-menu-right">
+		<li class="dropdown-header">Site Settings</li>
+		<li>
+			<form>
+				<div class="form-group">
+					<label>
+						<input checked="checked" id="toggleAtlas" type="checkbox">
+						Show Atlas Theme
+					</label>
+				</div>
+				<div class="form-group">
+					<label>
+						<input checked="checked" id="toggleSiteCss" type="checkbox">
+						Show Site CSS
+					</label>
+				</div>
+
+				<div class="form-group">
+					<button class="btn btn-default btn-block" id="resetSiteConfig">Reset Settings</button>
+				</div>
+			</form>
+		</li>
+	</ul>
+</div>
+			</div>
+		</header>
+
+		<section class="container main-nav-container">
+			<nav class="" id="mainNav">
+	<div class="main-nav-inner">
+			
+
+		<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../">Home</a>
+</li>
+<li class=""><span class="nav-title">Components</span>
+<div class="">
+<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../content/alerts">Alerts</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/badges-and-labels">Badges, Labels and Stickers</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/buttons">Buttons</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/cards">Cards</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns">Dropdowns</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements">Form Elements</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-input-groups">Form Elements (Input Groups)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-validation">Form Elements (Validation)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/header">Header Toolbar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/icons-lexicon">Icons (Lexicon)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/list-groups">List Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/management-bar">Management Bar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/modals">Modals</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav">Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-tabs">Nav Tabs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/navbar">Navbars</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/paginations">Pagination</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/panels">Panels</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/popovers">Popovers and Tooltips</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/progress-bars">Progress Bars</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/timelines">Timelines</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/toggles">Toggles</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/user-icons">User Icons</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components (JS)</span>
+<div class="">
+<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../content/collapsible-search">Collapsible Search</a>
+</li>
+<li class="active"><a class="nav-title" href="../../content/sidenav">Sidenav</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Elements</span>
+<div class="">
+<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../content/typography">Typography</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/breadcrumbs">Breadcrumbs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/figures">Figures</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/icons">Icons</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/icons-font-awesome">Icons (Font Awesome)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/icons-glyphicons">Icons (Glyphicons)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/images-and-thumbnails">Images, Thumbnails, and Aspect Ratios</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nameplates">Nameplates</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/pagers">Pager</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sidebar">Sidebar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tab-groups">Tab Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tables">Tables</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/toolbars">Toolbars</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Example Pages</span>
+<div class="">
+<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../content/blogs-action">Blog - Actions</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/blogs-appearance">Blog - Appearance</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/documents-and-media">Documents and Media</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-examples">Form Examples</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Experimental</span>
+<div class="">
+<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../content/experimental-cards">Cards (Flexbox)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/experimental-simple-flexbox-grid">Simple Flexbox Grid</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Extending Components</span>
+<div class="">
+<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../content/extending-best-practices">Best Practices</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/extending-cards">Extending Cards</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/extending-list-groups">Extending List Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/extending-tab-groups">Extending Tab Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/extending-toggles">Extending Toggles</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><a class="nav-title" href="../../CHANGELOG">CHANGELOG</a>
+</li>
+</ul>
+	</div>
+</nav>
+
+	<div class="" id="mainContent">
+		<h1 class="page-title" id="beginContent" tabindex="-1">
+			Sidenav
+
+			
+		</h1>
+
+		
+<div class="row row-spacing">
+	<div class="col-md-12">
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>A jQuery plugin that creates a slideout navigation on the right or left, for the sidebar css component see <a href="../sidebar">Sidebar</a>.</p>
+		</blockquote>
+
+		<h5>Syntax with Options:</h5>
+
+<pre><code class="html">&lt;head&gt;
+    &lt;script src=&quot;side-navigation.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;sidenav-container&quot;&gt;
+        &lt;a class=&quot;btn btn-default sidenav-toggler&quot; href=&quot;&quot;&gt;
+            &lt;span class=&quot;glyphicon glyphicon-align-justify&quot;&gt;&lt;/span&gt; Toggle
+        &lt;/a&gt;
+
+        &lt;div class=&quot;sidenav-menu-slider&quot;&gt;
+            &lt;div class=&quot;sidenav-menu&quot;&gt;
+                &lt;div class=&quot;col-md-12&quot;&gt;... Your Side Nav Content ...&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;sidenav-content&quot;&gt;
+            &lt;div class=&quot;col-md-12&quot;&gt;... Your Main Content ...&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script&gt;
+        $(&apos;.sidenav-container&apos;).sideNavigation({
+            breakpoint: 768, // The window width that defines the desktop size. Default: 768.
+            content: &apos;.sidenav-content&apos;, // The class or ID of the content container. Default: &apos;.sidenav-content&apos;.
+            gutter: &apos;15px&apos;, // The space between the sidenav-slider and the sidenav-content. Default: 15px.
+            equalHeight: true, // The height of content and navigation should be equal.
+            navigation: &apos;.sidenav-menu-slider&apos;, // The class or ID of the navigation container. Default: &apos;.sidenav-menu-slider&apos;.
+            position: &apos;left&apos;, // The position of the sidenav-slider. Possible values: left, right. Default: &apos;left&apos;.
+            toggler: &apos;.sidenav-toggler&apos;, // The class or ID of the toggle button. Default: &apos;.sidenav-toggler&apos;.
+            type: &apos;relative&apos;, // The type of sidenav in desktop. Possible values: relative, fixed, fixed-push. Default: &apos;relative&apos;.
+            typeMobile: &apos;relative&apos;, // The type of sidenav in mobile. Possible values: relative, fixed, fixed-push. Default: &apos;relative&apos;.
+            useDelegate: true, // The type of reference to use on the toggler event handler. Value false, directly binds click to the toggler.
+            width: &apos;225px&apos; // The width of the side navigation. Default: &apos;225px&apos;.
+        });
+    &lt;/script&gt;
+&lt;/body&gt;</code></pre>
+
+	</div>
+</div>
+
+<div class="row row-spacing sidenav-demo-container">
+	<div class="col-md-12">
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>To create a sidenav relative to other elements inside your page, you must follow the markup structure shown above.</p>
+		</blockquote>
+
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>The toggle button should be placed inside <code>.sidenav-container</code>, but can be placed outside if needed. Just add a unique id to the toggle button and container, instantiate the sideNavigation plugin on the container id, and pass the toggle button id through plugin options.</p>
+		</blockquote>
+
+		<button class="btn btn-default" id="mySidenavToggleId" style="margin-bottom:5px;">
+			<svg class="icon-monospaced lexicon-icon">
+				<use xlink:href="../../images/icons/icons.svg#bars">
+			</svg>
+
+			Toggle
+		</button>
+
+		<div class="sidenav-container" id="mySidenavContainerId">
+			<div class="sidenav-menu-slider" style="background:#FFF;">
+				<div class="sidenav-menu">
+					<div class="col-md-12">... Your Side Nav Content ...</div>
+				</div>
+			</div>
+
+			<div class="sidenav-content" style="background:#EEE;">
+				<div class="col-md-12">... Your Main Content ...</div>
+			</div>
+		</div>
+
+<div class="uxgl-toggle-code">
+  <a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse0"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse0">
+<pre><code class="html">&lt;button class=&quot;btn btn-default&quot; id=&quot;mySidenavToggleId&quot;&gt;
+    &lt;span class=&quot;glyphicon glyphicon-align-justify&quot;&gt;&lt;/span&gt; Toggle
+&lt;/button&gt;
+
+&lt;div class=&quot;sidenav-container&quot; id=&quot;mySidenavContainerId&quot;&gt;
+    &lt;div class=&quot;sidenav-menu-slider&quot;&gt;
+        &lt;div class=&quot;sidenav-menu&quot;&gt;
+            &lt;div class=&quot;col-md-12&quot;&gt;... Your Side Nav Content ...&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;sidenav-content&quot;&gt;
+        &lt;div class=&quot;col-md-12&quot;&gt;... Your Main Content ...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    $(&apos;#mySidenavContainerId&apos;).sideNavigation({
+        toggler: &apos;#mySidenavToggleId&apos;
+    });
+&lt;/script&gt;</code></pre>
+</div>
+
+	</div>
+</div>
+
+<div class="row row-spacing sidenav-demo-container">
+	<div class="col-md-12">
+		<button class="btn btn-default" id="mySidenavToggleId1" style="margin-bottom:5px;">
+			<svg class="icon-monospaced lexicon-icon">
+				<use xlink:href="../../images/icons/icons.svg#bars">
+			</svg>
+
+			Toggle
+		</button>
+
+		<div class="sidenav-container" id="mySidenavContainerId1">
+			<div class="sidenav-menu-slider" style="background:#FFF;">
+				<div class="sidenav-menu">
+					<div class="col-md-12">... Your Side Nav Content ...</div>
+				</div>
+			</div>
+
+			<div class="sidenav-content" style="background:#EEE;">
+				<div class="col-md-12">... Your Main Content ...</div>
+			</div>
+		</div>
+
+<div class="uxgl-toggle-code">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse1"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse1">
+	<pre><code class="html">&lt;button class=&quot;btn btn-default&quot; id=&quot;mySidenavToggleId&quot;&gt;
+    &lt;span class=&quot;glyphicon glyphicon-align-justify&quot;&gt;&lt;/span&gt; Toggle
+&lt;/button&gt;
+
+&lt;div class=&quot;sidenav-container&quot; id=&quot;mySidenavContainerId&quot;&gt;
+    &lt;div class=&quot;sidenav-menu-slider&quot;&gt;
+        &lt;div class=&quot;sidenav-menu&quot;&gt;
+            &lt;div class=&quot;col-md-12&quot;&gt;... Your Side Nav Content ...&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;sidenav-content&quot;&gt;
+        &lt;div class=&quot;col-md-12&quot;&gt;... Your Main Content ...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    $(&apos;#mySidenavContainerId&apos;).sideNavigation({
+        toggler: &apos;#mySidenavToggleId&apos;
+    });
+&lt;/script&gt;</code></pre>
+</div>
+
+	</div>
+</div>
+
+<div class="row row-spacing">
+	<div class="col-md-12">
+		<h3 id="side-navigation-data-api"><a class="heading-anchor" href="#side-navigation-data-api"><i class="icon icon-link"></i></a>Side Navigation Data Api</h3>
+
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>The Side Navigation data api was added for situations where there is limited control over the markup structure. The only markup needed is a toggler and a panel to hide and show. These items can be included anywhere on the page.</p>
+		</blockquote>
+
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>The minimum amount of attributes required is <code>data-toggle=&quot;sidenav&quot;</code> and <code>href=&quot;#target&quot;</code> or <code>data-target=&quot;#target&quot;</code>. This will open and close a fixed position sidenav provided the markup below. The width of the <code>sidenav-slider</code>, <code>sidenav-menu</code>, and position of the sidenav must be set through css. When using <code>fixed-push</code>, padding must also be set via css on open to push the content over.</p>
+		</blockquote>
+
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>The data api allows for fixed-push style sidenavs with the attributes <code>data-content</code>, <code>data-type</code>, and <code>data-type-mobile</code>. <code>Data-content</code> is the id of the content to be pushed over when the nav is open. <code>Data-type</code> and <code>data-type-mobile</code> give the option to specify the style of sidenav in desktop and mobile, respectively. The values can be <code>fixed</code> or <code>fixed-push</code> and defaults to fixed.</p>
+
+			<p>The open class name can be customized through the attribute <code>data-open-class</code> and will be added to toggler and content on open. </p>
+		</blockquote>
+
+		<a class="btn btn-default" href="#simpleSidenav" data-content="#wrapper" data-toggle="sidenav" data-type="fixed-push" data-use-delegate="true">Simple Sidenav Toggler</a>
+
+		<div class="closed sidenav-fixed sidenav-menu-slider" id="simpleSidenav">
+			<div class="product-menu1 sidebar sidebar-default sidenav-menu">
+				<div class="sidebar-header">
+					<h4>
+						<a href="#1">
+							<svg class="lexicon-icon sidebar-header-logo">
+								<use xlink:href="../../images/icons/icons.svg#staging">
+							</svg>
+							<span>Squareup</span>
+						</a>
+
+						<a class="sidenav-close" href="#1">
+							<svg aria-hidden="true" class="icon-monospaced lexicon-icon">
+								<use xlink:href="../../images/icons/icons.svg#times">
+							</svg>
+						</a>
+					</h4>
+				</div>
+
+				<ul class="nav nav-tabs product-menu-tabs1">
+					<li class="active col-xs-4">
+						<a data-toggle="tab" href="#tab01">
+							<div class="product-menu-tab-icon1"><span class="icon-android icon-monospaced"></span></div>
+							<div class="product-menu-tab-text1">Android</div>
+						</a>
+					</li>
+
+					<li class="col-xs-4">
+						<a data-toggle="tab" href="#tab02">
+							<div class="product-menu-tab-icon1"><span class="icon-github icon-monospaced"></span></div>
+							<div class="product-menu-tab-text1">Github</div>
+						</a>
+					</li>
+
+					<li class="col-xs-4">
+						<a data-toggle="tab" href="#tab03">
+							<div class="product-menu-tab-icon1">
+								<span class="icon-keyboard icon-monospaced"></span>
+								<span class="sticker sticker-right sticker-rounded sticker-sm sticker-warning">24</span>
+							</div>
+							<div class="product-menu-tab-text1">Editor</div>
+						</a>
+					</li>
+				</ul>
+
+				<div class="sidebar-body">
+					<div class="tab-content">
+						<div class="active fade in tab-pane" id="tab01">
+							<form role="form">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>From</label>
+											<input class="form-control" type="text" placeholder="City or Airport">
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>To</label>
+											<input class="form-control" type="text" placeholder="City or Airport">
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Departing</label>
+											<input class="form-control" type="text" placeholder="Departing Date">
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Returning</label>
+											<input class="form-control" type="text" placeholder="Returning Date">
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Adults</label>
+											<select class="form-control">
+												<option>0 Adults</option>
+												<option>1 Adult</option>
+												<option>2 Adults</option>
+												<option>3 Adults</option>
+												<option>4 Adults</option>
+												<option>5 Adults</option>
+												<option>6 Adults</option>
+												<option>7 Adults</option>
+												<option>8 Adults</option>
+												<option>9 Adults</option>
+												<option>10 Adults</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Children</label>
+											<select class="form-control">
+												<option>0 Children</option>
+												<option>1 Child</option>
+												<option>2 Children</option>
+												<option>3 Children</option>
+												<option>4 Children</option>
+												<option>5 Children</option>
+												<option>6 Children</option>
+												<option>7 Children</option>
+												<option>8 Children</option>
+												<option>9 Children</option>
+												<option>10 Children</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<button class="btn btn-md btn-success">Search Flights</button>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<div class="fade in tab-pane" id="tab02">
+							<form role="form">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>From</label>
+											<input class="form-control" type="text" placeholder="City or Airport">
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>To</label>
+											<input class="form-control" type="text" placeholder="City or Airport">
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Departing</label>
+											<input class="form-control" type="text" placeholder="Departing Date">
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12 form-group">
+										<button class="btn btn-default btn-xs" type="button">Add Destination</button>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Adults</label>
+											<select class="form-control">
+												<option>0 Adults</option>
+												<option>1 Adult</option>
+												<option>2 Adults</option>
+												<option>3 Adults</option>
+												<option>4 Adults</option>
+												<option>5 Adults</option>
+												<option>6 Adults</option>
+												<option>7 Adults</option>
+												<option>8 Adults</option>
+												<option>9 Adults</option>
+												<option>10 Adults</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Children</label>
+											<select class="form-control">
+												<option>0 Children</option>
+												<option>1 Child</option>
+												<option>2 Children</option>
+												<option>3 Children</option>
+												<option>4 Children</option>
+												<option>5 Children</option>
+												<option>6 Children</option>
+												<option>7 Children</option>
+												<option>8 Children</option>
+												<option>9 Children</option>
+												<option>10 Children</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<button class="btn btn-md btn-success">Search Flights</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="fade in tab-pane" id="tab03">
+							<form>
+								<div class="input-group search-bar">
+									<input class="form-control" placeholder="Search Site..." type="text">
+
+									<span class="input-group-btn">
+										<button class="btn" type="button"><span class="icon-monospaced icon-search"></span></button>
+									</span>
+								</div>
+							</form>
+
+							<div class="list-group">
+								<a aria-expanded="false" class="collapse-icon collapsed list-group-heading" data-toggle="collapse" href="#listGroupCollapse0004">
+									<h5>Junkers Marketing <small>STAGING</small></h5>
+								</a>
+								<div class="collapse" id="listGroupCollapse0004">
+									<div class="list-group-item">Breve, french press, shop arabica white blue mountain shop foam acerbic wings extraction white, at iced irish french press rich fair trade rich aromatic whipped. To go variety spoon americano aged froth, milk cup cortado, white redeye cinnamon turkish...</div>
+								</div>
+
+								<a aria-expanded="true" class="collapse-icon list-group-heading" data-toggle="collapse" href="#listGroupCollapse0005">
+									<h5>Junkers RRHH</h5>
+								</a>
+								<div class="collapse in" id="listGroupCollapse0005" aria-expanded="true">
+									<div class="list-group-item">Breve, french press, shop arabica white blue mountain shop foam acerbic wings extraction white, at iced irish french press rich fair trade rich aromatic whipped. To go variety spoon americano aged froth, milk cup cortado, white redeye cinnamon turkish...</div>
+								</div>
+
+								<a aria-expanded="false" class="collapse-icon collapsed list-group-heading" data-toggle="collapse" href="#listGroupCollapse0006">
+									<h5>Junkers Design <small>STAGING</small></h5>
+								</a>
+								<div class="collapse" id="listGroupCollapse0006">
+									<div class="list-group-item">Breve, french press, shop arabica white blue mountain shop foam acerbic wings extraction white, at iced irish french press rich fair trade rich aromatic whipped. To go variety spoon americano aged froth, milk cup cortado, white redeye cinnamon turkish...</div>
+								</div>
+								<a aria-expanded="false" class="collapse-icon collapsed list-group-heading" data-toggle="collapse" href="#listGroupCollapse0007">
+									<h5>Junkers UX</h5>
+								</a>
+								<div class="collapse" id="listGroupCollapse0007">
+									<div class="list-group-item">Breve, french press, shop arabica white blue mountain shop foam acerbic wings extraction white, at iced irish french press rich fair trade rich aromatic whipped. To go variety spoon americano aged froth, milk cup cortado, white redeye cinnamon turkish...</div>
+								</div>
+								<a aria-expanded="false" class="collapse-icon collapsed list-group-heading" data-toggle="collapse" href="#listGroupCollapse0008">
+									<h5>Junkers Java</h5>
+								</a>
+								<div class="collapse" id="listGroupCollapse0008">
+									<div class="list-group-item">Breve, french press, shop arabica white blue mountain shop foam acerbic wings extraction white, at iced irish french press rich fair trade rich aromatic whipped. To go variety spoon americano aged froth, milk cup cortado, white redeye cinnamon turkish...</div>
+								</div>
+								<a aria-expanded="false" class="collapse-icon collapsed list-group-heading" data-toggle="collapse" href="#listGroupCollapse0009">
+									<h5>Junkers Ruby <small>STAGING</small></h5>
+								</a>
+								<div class="collapse" id="listGroupCollapse0009">
+									<div class="list-group-item">Breve, french press, shop arabica white blue mountain shop foam acerbic wings extraction white, at iced irish french press rich fair trade rich aromatic whipped. To go variety spoon americano aged froth, milk cup cortado, white redeye cinnamon turkish...</div>
+								</div>
+								<a aria-expanded="false" class="collapse-icon collapsed list-group-heading" data-toggle="collapse" href="#listGroupCollapse00010">
+									<h5>Junkers Python <small>STAGING</small></h5>
+								</a>
+								<div class="collapse" id="listGroupCollapse00010">
+									<div class="list-group-item">Breve, french press, shop arabica white blue mountain shop foam acerbic wings extraction white, at iced irish french press rich fair trade rich aromatic whipped. To go variety spoon americano aged froth, milk cup cortado, white redeye cinnamon turkish...</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sidebar-footer">
+					<div class="nameplate">
+						<div class="nameplate-field">
+							<div class="user-icon user-icon-warning">
+								:D
+							</div>
+						</div>
+
+						<div class="nameplate-content">
+							<h4 class="user-heading">Joe Bloggs<small class="user-subheading">Subheading</small></h4>
+						</div>
+
+						<div class="nameplate-field">
+							<a class="icon-monospaced" href="#1"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+
+			<pre><code>&lt;head&gt;
+    &lt;script src=&quot;side-navigation.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;div id=&quot;#wrapper&quot;&gt;
+    &lt;a class=&quot;btn btn-default&quot; href=&quot;#simpleSidenav&quot; data-content=&quot;#wrapper&quot; data-toggle=&quot;sidenav&quot; data-type=&quot;fixed-push&quot;&gt;Simple Sidenav Toggler&lt;/a&gt;
+
+    &lt;div class=&quot;closed sidenav-fixed sidenav-menu-slider&quot; id=&quot;simpleSidenav&quot;&gt;
+        &lt;div class=&quot;sidebar sidebar-default sidenav-menu&quot;&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    $(&apos;[data-toggle=&quot;sidenav&quot;]&apos;).sideNavigation();
+&lt;/script&gt;</code></pre>
+
+		</div>
+	</div>
+</div>
+
+<script>
+	$('#mySidenavContainerId').sideNavigation({
+		toggler: '#mySidenavToggleId'
+	});
+
+	$('#mySidenavContainerId1').sideNavigation({
+		position: 'right',
+		toggler: '#mySidenavToggleId1'
+	});
+
+	$('[data-toggle="sidenav"]').sideNavigation();
+</script>
+	</div>
+
+		</section>
+	</div>
+
+	<link rel="stylesheet" href="../../scss/highlightjs/github.css" />
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+	<script src="../../js/site/toggle_css.js"></script>
+	<script src="../../js/svg4everybody.js" type="text/javascript"></script>
+
+	<script>
+		svg4everybody({
+			polyfill: true
+		});
+
+		$(function() {
+			var body = $('body');
+			var headerTopBar = $('#headerTopBar');
+
+			headerTopBar.find('.navbar-toggle').on(
+				'click',
+				function(event) {
+					var $this = $(this);
+
+					var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
+
+					var mainNavContainer = $('.main-nav-container');
+					var wrapper = $this.closest('#wrapper');
+
+					var isNavOpen = (function() {
+						if (wrapper.hasClass('main-nav-open')) {
+							return true;
+						}
+
+						return false;
+					})();
+
+					var forceReflow = function(el) {
+						el.css({ 
+							display: 'table'
+						});
+
+						setTimeout(function() {
+							el.css({
+								display: ''
+							});
+						}, 0);
+					};
+
+					event.preventDefault();
+
+					mainNavContainer.on(
+						transitionEnd,
+						function(event) {
+							if ($(event.target).is('#mainNav')) {
+								mainNavContainer.removeClass('main-nav-transition');
+								forceReflow($('html'));
+
+								if (isNavOpen) {
+									body.removeClass('lexicon-site-body-fixed');
+								}
+
+								$(this).off(transitionEnd);
+							}
+						}
+					);
+
+					mainNavContainer.addClass('main-nav-transition');
+
+					if (isNavOpen) {
+						wrapper.removeClass('main-nav-open');
+					}
+					else {
+						body.addClass('lexicon-site-body-fixed');
+						wrapper.addClass('main-nav-open');
+					}
+				}
+			);
+		});
+
+		hljs.initHighlightingOnLoad();
+	</script>
+	</body>
+</html>

@@ -1,0 +1,896 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Lexicon - Badges, Labels and Stickers</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../css/atlas-font-awesome.css" />
+	<link rel="stylesheet" href="../../css/main.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="../../js/bootstrap.js"></script>
+	<script src="../../js/collapsible-search.js"></script>
+	<script src="../../js/side-navigation.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header class="row" id="headerTopBar">
+			<div class="container">
+				<a class="btn btn-primary" href="#beginContent" id="skipTo">Skip to Content</a>
+
+				<button type="button" class="animated-toggle navbar-toggle">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<h4 class="title"><a href="../..">Lexicon</a> <span class="label label-primary label-sm lexicon-version">v0.1.26</span></h4>
+
+				<div class="dropdown" id="siteConfig">
+	<button class="btn btn-primary btn-sm" data-toggle="dropdown"><i class="icon-cog"></i></button>
+	<ul class="dropdown-menu dropdown-menu-right">
+		<li class="dropdown-header">Site Settings</li>
+		<li>
+			<form>
+				<div class="form-group">
+					<label>
+						<input checked="checked" id="toggleAtlas" type="checkbox">
+						Show Atlas Theme
+					</label>
+				</div>
+				<div class="form-group">
+					<label>
+						<input checked="checked" id="toggleSiteCss" type="checkbox">
+						Show Site CSS
+					</label>
+				</div>
+
+				<div class="form-group">
+					<button class="btn btn-default btn-block" id="resetSiteConfig">Reset Settings</button>
+				</div>
+			</form>
+		</li>
+	</ul>
+</div>
+			</div>
+		</header>
+
+		<section class="container main-nav-container">
+			<nav class="" id="mainNav">
+	<div class="main-nav-inner">
+			
+
+		<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../">Home</a>
+</li>
+<li class=""><span class="nav-title">Components</span>
+<div class="">
+<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../content/alerts">Alerts</a>
+</li>
+<li class="active"><a class="nav-title" href="../../content/badges-and-labels">Badges, Labels and Stickers</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/buttons">Buttons</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/cards">Cards</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns">Dropdowns</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements">Form Elements</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-input-groups">Form Elements (Input Groups)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-validation">Form Elements (Validation)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/header">Header Toolbar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/icons-lexicon">Icons (Lexicon)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/list-groups">List Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/management-bar">Management Bar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/modals">Modals</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav">Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-tabs">Nav Tabs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/navbar">Navbars</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/paginations">Pagination</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/panels">Panels</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/popovers">Popovers and Tooltips</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/progress-bars">Progress Bars</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/timelines">Timelines</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/toggles">Toggles</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/user-icons">User Icons</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components (JS)</span>
+<div class="">
+<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../content/collapsible-search">Collapsible Search</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sidenav">Sidenav</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Elements</span>
+<div class="">
+<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../content/typography">Typography</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/breadcrumbs">Breadcrumbs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/figures">Figures</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/icons">Icons</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/icons-font-awesome">Icons (Font Awesome)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/icons-glyphicons">Icons (Glyphicons)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/images-and-thumbnails">Images, Thumbnails, and Aspect Ratios</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nameplates">Nameplates</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/pagers">Pager</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sidebar">Sidebar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tab-groups">Tab Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tables">Tables</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/toolbars">Toolbars</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Example Pages</span>
+<div class="">
+<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../content/blogs-action">Blog - Actions</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/blogs-appearance">Blog - Appearance</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/documents-and-media">Documents and Media</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-examples">Form Examples</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Experimental</span>
+<div class="">
+<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../content/experimental-cards">Cards (Flexbox)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/experimental-simple-flexbox-grid">Simple Flexbox Grid</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Extending Components</span>
+<div class="">
+<ul class="nav nav-stacked">
+<li class=""><a class="nav-title" href="../../content/extending-best-practices">Best Practices</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/extending-cards">Extending Cards</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/extending-list-groups">Extending List Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/extending-tab-groups">Extending Tab Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/extending-toggles">Extending Toggles</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><a class="nav-title" href="../../CHANGELOG">CHANGELOG</a>
+</li>
+</ul>
+	</div>
+</nav>
+
+	<div class="" id="mainContent">
+		<h1 class="page-title" id="beginContent" tabindex="-1">
+			Badges, Labels and Stickers
+
+			
+		</h1>
+
+		
+<div class="row row-spacing" id="badges">
+	<div class="col-md-12">
+		<h3 id="badges"><a class="heading-anchor" href="#badges"><i class="icon icon-link"></i></a>Badges</h3>
+
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>Badges help highlight important information such as notifications or new and unread messages. Badges have circular borders by default, for rounded borders, See <a href="#labels">labels</a>.</p>
+		</blockquote>
+
+		<span class="badge badge-default">Default</span>
+		<span class="badge badge-primary">Primary</span>
+		<span class="badge badge-success">Success</span>
+		<span class="badge badge-info">Info</span>
+		<span class="badge badge-warning">Warning</span>
+		<span class="badge badge-danger">Danger</span>
+
+<div class="uxgl-toggle-code" style="margin-top:15px;">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse0"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse0">
+	<pre><code class="html">&lt;span class=&quot;badge badge-default&quot;&gt;Default&lt;/span&gt;
+&lt;span class=&quot;badge badge-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;badge badge-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;badge badge-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;badge badge-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;badge badge-danger&quot;&gt;Danger&lt;/span&gt;</code></pre>
+</div>
+
+	</div>
+</div>
+
+<div class="row row-spacing">
+	<div class="col-md-12">
+		<h3 id="fixed-width-and-height-badges"><a class="heading-anchor" href="#fixed-width-and-height-badges"><i class="icon icon-link"></i></a>Fixed Width and Height Badges</h3>
+
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>Use <code>badge-monospaced</code> to create a badge that has a fixed width and height. It is useful for showing the number of new messages or pending requests in your application.</p>
+		</blockquote>
+
+		<span class="badge badge-default badge-monospaced">10</span>
+		<span class="badge badge-monospaced badge-primary">10</span>
+		<span class="badge badge-monospaced badge-success">10</span>
+		<span class="badge badge-info badge-monospaced">10</span>
+		<span class="badge badge-monospaced badge-warning">10</span>
+		<span class="badge badge-danger badge-monospaced">10</span>
+
+<div class="uxgl-toggle-code" style="margin-top:15px;">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse1"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse1">
+	<pre><code class="html">&lt;span class=&quot;badge badge-default badge-monospaced&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;badge badge-monospaced badge-primary&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;badge badge-monospaced badge-success&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;badge badge-info badge-monospaced&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;badge badge-monospaced badge-warning&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;badge badge-danger badge-monospaced&quot;&gt;10&lt;/span&gt;</code></pre>
+</div>
+
+	</div>
+</div>
+
+<div class="row row-spacing">
+	<div class="col-md-12">
+		<h3 id="badge-sizes"><a class="heading-anchor" href="#badge-sizes"><i class="icon icon-link"></i></a>Badge Sizes</h3>
+
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>Use <code>badge-sm</code> and <code>badge-lg</code> to change the badge size.</p>
+		</blockquote>
+
+		<h5>Normal</h5>
+		<div>
+			<span class="badge badge-default badge-sm">Small Badge</span>
+			<span class="badge badge-primary">Default Badge</span>
+			<span class="badge badge-lg badge-success">Large Badge</span>
+		</div>
+
+		<h5>Monospaced</h5>
+		<div>
+			<span class="badge badge-info badge-monospaced badge-sm">SM</span>
+			<span class="badge badge-monospaced badge-warning">DEF</span>
+			<span class="badge badge-danger badge-lg badge-monospaced">LG</span>
+		</div>
+
+<div class="uxgl-toggle-code" style="margin-top:15px;">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse2"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse2">
+	<pre><code class="html">&lt;span class=&quot;badge badge-default badge-sm&quot;&gt;Small Badge&lt;/span&gt;
+&lt;span class=&quot;badge badge-primary&quot;&gt;Default Badge&lt;/span&gt;
+&lt;span class=&quot;badge badge-lg badge-success&quot;&gt;Large Badge&lt;/span&gt;
+&lt;span class=&quot;badge badge-info badge-monospaced badge-sm&quot;&gt;SM&lt;/span&gt;
+&lt;span class=&quot;badge badge-monospaced badge-warning&quot;&gt;DEF&lt;/span&gt;
+&lt;span class=&quot;badge badge-danger badge-lg badge-monospaced&quot;&gt;LG&lt;/span&gt;</code></pre>
+</div>
+
+	</div>
+</div>
+
+<div class="row row-spacing">
+	<div class="col-md-12">
+		<h3 id="badge-with-links"><a class="heading-anchor" href="#badge-with-links"><i class="icon icon-link"></i></a>Badge with Links</h3>
+
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>Links inside Badge.</p>
+		</blockquote>
+
+		<div>
+			<h5>Regular Icons</h5>
+			<span class="badge badge-default badge-sm">
+				Small Badge
+				<a href="#1">
+					<svg class="lexicon-icon">
+						<use xlink:href="../../images/icons/icons.svg#times">
+					</svg>
+				</a>
+			</span>
+			<span class="badge badge-primary">
+				Default Badge
+				<a href="#1">
+					<svg class="lexicon-icon">
+						<use xlink:href="../../images/icons/icons.svg#times">
+					</svg>
+				</a>
+			</span>
+			<span class="badge badge-lg badge-success">
+				Large Badge
+				<a href="#1">
+					<svg class="lexicon-icon">
+						<use xlink:href="../../images/icons/icons.svg#times">
+					</svg>
+				</a>
+			</span>
+		</div>
+
+<div class="uxgl-toggle-code" style="margin-top:15px;">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse00"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse00">
+	<pre><code class="html">&lt;span class=&quot;badge badge-default badge-sm&quot;&gt;
+    Small Badge
+    &lt;a href=&quot;#1&quot;&gt;
+        &lt;svg class=&quot;lexicon-icon&quot;&gt;
+            &lt;use xlink:href=&quot;../../images/icons/icons.svg#times&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+
+&lt;span class=&quot;badge badge-primary&quot;&gt;
+    Default Badge
+    &lt;a href=&quot;#1&quot;&gt;
+        &lt;svg class=&quot;lexicon-icon&quot;&gt;
+            &lt;use xlink:href=&quot;../../images/icons/icons.svg#times&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+
+&lt;span class=&quot;badge badge-lg badge-success&quot;&gt;
+    Large Badge
+    &lt;a href=&quot;#1&quot;&gt;
+        &lt;svg class=&quot;lexicon-icon&quot;&gt;
+            &lt;use xlink:href=&quot;../../images/icons/icons.svg#times&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;</code></pre>
+</div>
+
+		<div>
+			<h5>With Monospaced Icons</h5>
+			<span class="badge badge-default badge-sm">
+				Small Badge
+				<a class="icon-monospaced" href="#1">
+					<svg class="lexicon-icon">
+						<use xlink:href="../../images/icons/icons.svg#times">
+					</svg>
+				</a>
+			</span>
+			<span class="badge badge-primary">
+				Default Badge
+				<a class="icon-monospaced" href="#1">
+					<svg class="lexicon-icon">
+						<use xlink:href="../../images/icons/icons.svg#times">
+					</svg>
+				</a>
+			</span>
+			<span class="badge badge-lg badge-success">
+				Large Badge
+				<a class="icon-monospaced" href="#1">
+					<svg class="lexicon-icon">
+						<use xlink:href="../../images/icons/icons.svg#times">
+					</svg>
+				</a>
+			</span>
+		</div>
+
+<div class="uxgl-toggle-code" style="margin-top:15px;">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse01"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse01">
+	<pre><code class="html">&lt;span class=&quot;badge badge-default badge-sm&quot;&gt;
+    Small Badge
+    &lt;a class=&quot;icon-monospaced&quot; href=&quot;#1&quot;&gt;
+        &lt;svg class=&quot;lexicon-icon&quot;&gt;
+            &lt;use xlink:href=&quot;../../images/icons/icons.svg#times&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+
+&lt;span class=&quot;badge badge-primary&quot;&gt;
+    Default Badge
+    &lt;a class=&quot;icon-monospaced&quot; href=&quot;#1&quot;&gt;
+        &lt;svg class=&quot;lexicon-icon&quot;&gt;
+            &lt;use xlink:href=&quot;../../images/icons/icons.svg#times&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+
+&lt;span class=&quot;badge badge-lg badge-success&quot;&gt;
+    Large Badge
+    &lt;a class=&quot;icon-monospaced&quot; href=&quot;#1&quot;&gt;
+        &lt;svg class=&quot;lexicon-icon&quot;&gt;
+            &lt;use xlink:href=&quot;../../images/icons/icons.svg#times&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;</code></pre>
+</div>
+
+	</div>
+</div>
+
+<div class="row row-spacing">
+	<div class="col-md-12">
+		<h3 id="badge-examples"><a class="heading-anchor" href="#badge-examples"><i class="icon icon-link"></i></a>Badge Examples</h3>
+
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>Some badge use cases.</p>
+		</blockquote>
+	</div>
+
+	<div class="col-md-4">
+		<h5>Badges inside Nav Pills</h5>
+		<ul class="nav nav-circle nav-pills nav-stacked">
+			<li><a href="#1">Inbox <span class="badge badge-default badge-sm">32</span></a></li>
+			<li><a href="#1">Sent <span class="badge badge-primary badge-sm">2</span></a></li>
+			<li><a href="#1">Drafts <span class="badge badge-sm badge-success">53</span></a></li>
+			<li class="active"><a href="#1">Spam <span class="badge badge-info badge-sm">12</span></a></li>
+			<li><a href="#1">Starred <span class="badge badge-sm badge-warning">1</span></a></li>
+			<li><a href="#1">Important <span class="badge badge-danger badge-sm">12</span></a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="row row-spacing">
+	<div class="col-md-12">
+		<h3 id="labels"><a class="heading-anchor" href="#labels"><i class="icon icon-link"></i></a>Labels</h3>
+
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>Use labels to organize groups of items in your application. Labels have rounded borders by default, for circular borders, See <a href="#badges">badges</a>.</p>
+		</blockquote>
+
+		<span class="label label-default">Default</span>
+		<span class="label label-primary">Primary</span>
+		<span class="label label-success">Success</span>
+		<span class="label label-info">Info</span>
+		<span class="label label-warning">Warning</span>
+		<span class="label label-danger">Danger</span>
+
+<div class="uxgl-toggle-code" style="margin-top:15px;">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse3"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse3">
+	<pre><code class="html">&lt;span class=&quot;label label-default&quot;&gt;Default&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;label label-danger&quot;&gt;Danger&lt;/span&gt;</code></pre>
+</div>
+
+	</div>
+</div>
+
+<div class="row row-spacing">
+	<div class="col-md-12">
+		<h3 id="label-sizes"><a class="heading-anchor" href="#label-sizes"><i class="icon icon-link"></i></a>Label Sizes</h3>
+
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>Use <code>label-sm</code> and <code>label-lg</code> to change the label size.</p>
+		</blockquote>
+
+		<span class="label label-default label-sm">Small Label</span>
+		<span class="label label-primary">Default Label</span>
+		<span class="label label-lg label-success">Large Label</span>
+
+<div class="uxgl-toggle-code" style="margin-top:15px;">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse4"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse4">
+	<pre><code class="html">&lt;span class=&quot;label label-default label-sm&quot;&gt;Small Label&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Default Label&lt;/span&gt;
+&lt;span class=&quot;label label-lg label-success&quot;&gt;Large Label&lt;/span&gt;</code></pre>
+</div>
+
+	</div>
+</div>
+
+<div class="row row-spacing">
+	<div class="col-md-12">
+		<h3 id="label-with-links"><a class="heading-anchor" href="#label-with-links"><i class="icon icon-link"></i></a>Label with Links</h3>
+
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>Links inside Labels.</p>
+		</blockquote>
+
+		<div>
+			<h5>Regular Icons</h5>
+			<span class="label label-default label-sm">
+				Small Label
+				<a href="#1">
+					<svg class="lexicon-icon">
+						<use xlink:href="../../images/icons/icons.svg#times">
+					</svg>
+				</a>
+			</span>
+			<span class="label label-primary">
+				Default Label
+				<a href="#1">
+					<svg class="lexicon-icon">
+						<use xlink:href="../../images/icons/icons.svg#times">
+					</svg>
+				</a>
+			</span>
+			<span class="label label-lg label-success">
+				Large Label
+				<a href="#1">
+					<svg class="lexicon-icon">
+						<use xlink:href="../../images/icons/icons.svg#times">
+					</svg>
+				</a>
+			</span>
+		</div>
+
+<div class="uxgl-toggle-code" style="margin-top:15px;">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse5"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse5">
+	<pre><code class="html">&lt;span class=&quot;label label-default label-sm&quot;&gt;
+    Small Label
+    &lt;a href=&quot;#1&quot;&gt;
+        &lt;svg class=&quot;lexicon-icon&quot;&gt;
+            &lt;use xlink:href=&quot;../../images/icons/icons.svg#times&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+
+&lt;span class=&quot;label label-primary&quot;&gt;
+    Default Label
+    &lt;a href=&quot;#1&quot;&gt;
+        &lt;svg class=&quot;lexicon-icon&quot;&gt;
+            &lt;use xlink:href=&quot;../../images/icons/icons.svg#times&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+
+&lt;span class=&quot;label label-lg label-success&quot;&gt;
+    Large Label
+    &lt;a href=&quot;#1&quot;&gt;
+        &lt;svg class=&quot;lexicon-icon&quot;&gt;
+            &lt;use xlink:href=&quot;../../images/icons/icons.svg#times&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;</code></pre>
+</div>
+
+		<div>
+			<h5>With Monospaced Icons</h5>
+			<span class="label label-default label-sm">
+				Small Label
+				<a class="icon-monospaced" href="#1">
+					<svg class="lexicon-icon"><use xlink:href="../../images/icons/icons.svg#times"></svg>
+				</a>
+			</span>
+			<span class="label label-primary">
+				Default Label
+				<a class="icon-monospaced" href="#1">
+					<svg class="lexicon-icon"><use xlink:href="../../images/icons/icons.svg#times"></svg>
+				</a>
+			</span>
+			<span class="label label-lg label-success">
+				Large Label
+				<a class="icon-monospaced" href="#1">
+					<svg class="lexicon-icon"><use xlink:href="../../images/icons/icons.svg#times"></svg>
+				</a>
+			</span>
+		</div>
+
+<div class="uxgl-toggle-code" style="margin-top:15px;">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse6"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse6">
+	<pre><code class="html">&lt;span class=&quot;label label-default label-sm&quot;&gt;
+    Small Label
+    &lt;a class=&quot;icon-monospaced&quot; href=&quot;#1&quot;&gt;
+        &lt;svg class=&quot;lexicon-icon&quot;&gt;&lt;use xlink:href=&quot;../../images/icons/icons.svg#times&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+
+&lt;span class=&quot;label label-primary&quot;&gt;
+    Default Label
+    &lt;a class=&quot;icon-monospaced&quot; href=&quot;#1&quot;&gt;
+        &lt;svg class=&quot;lexicon-icon&quot;&gt;&lt;use xlink:href=&quot;../../images/icons/icons.svg#times&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+
+&lt;span class=&quot;label label-lg label-success&quot;&gt;
+    Large Label
+    &lt;a class=&quot;icon-monospaced&quot; href=&quot;#1&quot;&gt;
+        &lt;svg class=&quot;lexicon-icon&quot;&gt;&lt;use xlink:href=&quot;../../images/icons/icons.svg#times&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;</code></pre>
+</div>
+
+	</div>
+</div>
+
+<div class="row row-spacing">
+	<div class="col-md-12">
+		<h3 id="stickers"><a class="heading-anchor" href="#stickers"><i class="icon icon-link"></i></a>Stickers</h3>
+
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>Stickers are absolutely positioned monospaced badges, place them anywhere relative to your container.</p>
+		</blockquote>
+
+		<span class="sticker sticker-default" style="position:static;">133</span>
+		<span class="sticker sticker-danger" style="position:static;">133</span>
+		<span class="sticker sticker-info" style="position:static;">133</span>
+		<span class="sticker sticker-primary" style="position:static;">133</span>
+		<span class="sticker sticker-success" style="position:static;">133</span>
+		<span class="sticker sticker-warning" style="position:static;">133</span>
+
+<div class="uxgl-toggle-code">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse7"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse7">
+	<pre><code class="html">&lt;span class=&quot;sticker sticker-default&quot;&gt;133&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-danger&quot;&gt;133&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-info&quot;&gt;133&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-primary&quot;&gt;133&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-success&quot;&gt;133&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-warning&quot;&gt;133&lt;/span&gt;</code></pre>
+</div>
+
+	</div>
+</div>
+
+<div class="row row-spacing">
+	<div class="col-md-12">
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>Stickers come in 3 different sizes, small, regular and large. Create your own custom size by changing the <code>width</code>, <code>height</code>, <code>line-height</code>, and <code>font-size</code>. You can also use the sass monospace mixin to change the width and height e.g. <code>@include monospace(30px);</code>.</p>
+		</blockquote>
+
+		<span class="sticker sticker-default sticker-sm" style="position:static;">133</span>
+		<span class="sticker sticker-primary" style="position:static;">133</span>
+		<span class="sticker sticker-lg sticker-success" style="position:static;">133</span>
+
+<div class="uxgl-toggle-code">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse8"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse8">
+	<pre><code class="html">&lt;span class=&quot;sticker sticker-default sticker-sm&quot;&gt;133&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-primary&quot;&gt;133&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-lg sticker-success&quot;&gt;133&lt;/span&gt;</code></pre>
+</div>
+
+	</div>
+</div>
+
+<div class="row row-spacing">
+	<div class="col-md-12">
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>Change the borders with <code>sticker-circle</code>, <code>sticker-rounded</code>, or <code>sticker-square</code>.</p>
+		</blockquote>
+
+		<span class="sticker sticker-circle sticker-default" style="position:static;">133</span>
+		<span class="sticker sticker-primary sticker-rounded" style="position:static;">133</span>
+		<span class="sticker sticker-square sticker-success" style="position:static;">133</span>
+
+<div class="uxgl-toggle-code">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse9"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse9">
+	<pre><code class="html">&lt;span class=&quot;sticker sticker-circle sticker-default&quot;&gt;133&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-primary sticker-rounded&quot;&gt;133&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-square sticker-success&quot;&gt;133&lt;/span&gt;</code></pre>
+</div>
+
+	</div>
+</div>
+
+<div class="row row-spacing">
+	<div class="col-xs-12">
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>Stickers are positioned in the top left corner by default. Use a combination of the classes <code>sticker-bottom</code> and <code>sticker-right</code> to position in each corner.</p>
+		</blockquote>
+	</div>
+
+	<div class="col-md-3 col-xs-6">
+		<div class="aspect-ratio">
+			<img alt="thumbnail" src="../../images/thumbnail_hot_air_ballon.jpg">
+			<span class="sticker sticker-danger">PDF</span>
+		</div>
+	</div>
+
+	<div class="col-md-3 col-xs-6">
+		<div class="aspect-ratio">
+			<img alt="thumbnail" src="../../images/thumbnail_hot_air_ballon.jpg">
+			<span class="sticker sticker-bottom sticker-danger">PDF</span>
+		</div>
+	</div>
+
+	<div class="col-md-3 col-xs-6">
+		<div class="aspect-ratio">
+			<img alt="thumbnail" src="../../images/thumbnail_hot_air_ballon.jpg">
+			<span class="sticker sticker-danger sticker-right">PDF</span>
+		</div>
+	</div>
+
+	<div class="col-md-3 col-xs-6">
+		<div class="aspect-ratio">
+			<img alt="thumbnail" src="../../images/thumbnail_hot_air_ballon.jpg">
+			<span class="sticker sticker-bottom sticker-danger sticker-right">PDF</span>
+		</div>
+	</div>
+
+	<div class="col-xs-12">
+
+<div class="uxgl-toggle-code">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse10"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse10">
+	<pre><code class="html">&lt;span class=&quot;sticker sticker-danger&quot;&gt;PDF&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-bottom sticker-danger&quot;&gt;PDF&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-danger sticker-right&quot;&gt;PDF&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-bottom sticker-danger sticker-right&quot;&gt;PDF&lt;/span&gt;</code></pre>
+</div>
+
+	</div>
+</div>
+
+<div class="row row-spacing">
+	<div class="col-md-12">
+		<blockquote class="blockquote-sm blockquote-success">
+			<p>Add class <code>sticker-outside</code> to position the sticker on the outside corner.</p>
+		</blockquote>
+	</div>
+
+	<div class="col-md-3 col-xs-6">
+		<button class="btn btn-primary" style="position:relative;">
+			Email
+			<span class="sticker sticker-danger sticker-outside sticker-sm">133</span>
+		</button>
+	</div>
+
+	<div class="col-md-3 col-xs-6">
+		<button class="btn btn-primary" style="position:relative;">
+			Email
+			<span class="sticker sticker-bottom sticker-danger sticker-outside sticker-sm">133</span>
+		</button>
+	</div>
+
+	<div class="col-md-3 col-xs-6">
+		<button class="btn btn-primary" style="position:relative;">
+			Email
+			<span class="sticker sticker-danger sticker-outside sticker-right sticker-sm">133</span>
+		</button>
+	</div>
+
+	<div class="col-md-3 col-xs-6">
+		<button class="btn btn-primary" style="position:relative;">
+			Email
+			<span class="sticker sticker-bottom sticker-danger sticker-outside sticker-right sticker-sm">133</span>
+		</button>
+	</div>
+
+	<div class="col-md-12">
+
+<div class="uxgl-toggle-code">
+	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse11"><span class="icon-caret-down"></span></a>
+</div>
+<div class="collapse" id="codeCollapse11">
+	<pre><code class="html">&lt;span class=&quot;sticker sticker-danger sticker-outside sticker-sm&quot;&gt;PDF&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-bottom sticker-danger sticker-outside sticker-sm&quot;&gt;PDF&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-danger sticker-outside sticker-right sticker-sm&quot;&gt;PDF&lt;/span&gt;
+&lt;span class=&quot;sticker sticker-bottom sticker-danger sticker-outside sticker-right sticker-sm&quot;&gt;PDF&lt;/span&gt;</code></pre>
+</div>
+
+	</div>
+
+</div>
+	</div>
+
+		</section>
+	</div>
+
+	<link rel="stylesheet" href="../../scss/highlightjs/github.css" />
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+	<script src="../../js/site/toggle_css.js"></script>
+	<script src="../../js/svg4everybody.js" type="text/javascript"></script>
+
+	<script>
+		svg4everybody({
+			polyfill: true
+		});
+
+		$(function() {
+			var body = $('body');
+			var headerTopBar = $('#headerTopBar');
+
+			headerTopBar.find('.navbar-toggle').on(
+				'click',
+				function(event) {
+					var $this = $(this);
+
+					var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
+
+					var mainNavContainer = $('.main-nav-container');
+					var wrapper = $this.closest('#wrapper');
+
+					var isNavOpen = (function() {
+						if (wrapper.hasClass('main-nav-open')) {
+							return true;
+						}
+
+						return false;
+					})();
+
+					var forceReflow = function(el) {
+						el.css({ 
+							display: 'table'
+						});
+
+						setTimeout(function() {
+							el.css({
+								display: ''
+							});
+						}, 0);
+					};
+
+					event.preventDefault();
+
+					mainNavContainer.on(
+						transitionEnd,
+						function(event) {
+							if ($(event.target).is('#mainNav')) {
+								mainNavContainer.removeClass('main-nav-transition');
+								forceReflow($('html'));
+
+								if (isNavOpen) {
+									body.removeClass('lexicon-site-body-fixed');
+								}
+
+								$(this).off(transitionEnd);
+							}
+						}
+					);
+
+					mainNavContainer.addClass('main-nav-transition');
+
+					if (isNavOpen) {
+						wrapper.removeClass('main-nav-open');
+					}
+					else {
+						body.addClass('lexicon-site-body-fixed');
+						wrapper.addClass('main-nav-open');
+					}
+				}
+			);
+		});
+
+		hljs.initHighlightingOnLoad();
+	</script>
+	</body>
+</html>
