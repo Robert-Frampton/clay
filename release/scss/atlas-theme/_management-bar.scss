@@ -1,0 +1,130 @@
+/**
+* Lexicon 0.1.25
+*
+* Copyright 2015, Liferay, Inc.
+* All rights reserved.
+* MIT license
+*/
+.management-bar {
+	margin-bottom: 0;
+	padding-left: $management-bar-padding-horizontal;
+	padding-right: $management-bar-padding-horizontal;
+
+	a {
+		color: $nav-link-color;
+	}
+
+	.btn {
+		&,
+		&:focus,
+		&:hover {
+			color: $nav-link-color;
+		}
+	}
+}
+
+.management-bar .management-bar-nav > li > .btn,
+.management-bar .management-bar-nav > .dropdown > .btn,
+.management-bar-header > .btn,
+.management-bar-header-right > .btn {
+	@media screen and (min-width: $grid-float-breakpoint) {
+		margin: $management-bar-desktop-btn-padding-vertical 0 $management-bar-desktop-btn-padding-vertical $management-bar-desktop-btn-padding-horizontal;
+	}
+}
+
+.management-bar-header,
+.management-bar-header-right {
+	> .checkbox,
+	> .radio {
+		@media screen and (min-width: $grid-float-breakpoint) {
+			padding-bottom: 20px;
+			padding-top: 20px;
+		}
+	}
+}
+
+.management-bar-nav {
+	> li {
+		> .management-bar-text {
+			padding: 13px 15px;
+
+			@media screen and (min-width: $grid-float-breakpoint) {
+				padding: 19px 15px;
+			}
+		}
+	}
+}
+
+.management-bar-no-collapse .management-bar-nav {
+	> li {
+		> .btn {
+			padding: 0;
+		}
+
+		> .checkbox,
+		> .radio {
+			@media screen and (min-width: $grid-float-breakpoint) {
+				padding: 20px 15px;
+			}
+		}
+	}
+
+	.dropdown-menu {
+		@include arrow("top-left", 8px, 1px, 9px, $dropdown-arrow-color, $dropdown-border);
+	}
+
+	.dropdown-menu-center {
+		@include arrow("top-center", 8px, 1px, 9px, $dropdown-arrow-color, $dropdown-border);
+	}
+
+	.dropdown-menu-right,
+	.navbar-right .dropdown-menu {
+		@include arrow("top-right", 8px, 1px, 9px, $dropdown-arrow-color, $dropdown-border);
+	}
+
+	.open .dropdown-menu {
+		&:after,
+		&:before {
+			display: block;
+		}
+	}
+}
+
+.management-bar-toggle-link {
+	&.management-bar-toggle {
+		padding: 14px 15px;
+
+		@media screen and (min-width: $grid-float-breakpoint) {
+			padding: $management-bar-padding-vertical $management-bar-padding-horizontal;
+		}
+	}
+}
+
+// Skins
+
+.management-bar-default {
+	border-color: $management-bar-default-border;
+
+	a {
+		color: $management-bar-default-link-color;
+	}
+
+	.btn {
+		border: 1px solid $management-bar-default-border;
+		border-radius: 3px;
+		color: $management-bar-default-link-color;
+		padding: 0;
+
+		&:focus,
+		&:hover {
+			color: $management-bar-default-link-hover-color;
+		}
+	}
+
+	.management-bar-collapse {
+		border-top-width: 0;
+		left: 0;
+		margin-top: $management-bar-border-bottom-width;
+		right: 0;
+	}
+}

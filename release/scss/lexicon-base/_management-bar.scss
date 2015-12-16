@@ -1,0 +1,292 @@
+/**
+* Lexicon 0.1.25
+*
+* Copyright 2015, Liferay, Inc.
+* All rights reserved.
+* MIT license
+*/
+.management-bar {
+	@extend .navbar;
+
+	border-style: solid;
+	border-width: $management-bar-border-width;
+	padding-left: $management-bar-padding-horizontal;
+	padding-right: $management-bar-padding-horizontal;
+
+	.checkbox,
+	.radio {
+		margin-bottom: 0;
+		margin-top: 0;
+
+		label {
+			display: block;
+		}
+	}
+
+	.btn {
+		&:active,
+		&.active {
+			box-shadow: none;
+		}
+
+		&:focus,
+		&:hover {
+			background-color: $nav-link-hover-bg;
+			color: $link-hover-color;
+		}
+
+		&.btn-danger {
+			@include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+		}
+
+		&.btn-default {
+			@include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+		}
+
+		&.btn-info {
+			@include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+		}
+
+		&.btn-primary {
+			@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+		}
+
+		&.btn-success {
+			@include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+		}
+
+		&.btn-warning {
+			@include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+		}
+	}
+}
+
+.management-bar .management-bar-nav > li > .btn,
+.management-bar .management-bar-nav > .dropdown > .btn,
+.management-bar-header > .btn,
+.management-bar-header-right > .btn {
+	margin: $management-bar-btn-padding-vertical 0 $management-bar-btn-padding-vertical $management-bar-btn-padding-horizontal;
+	padding: 0;
+}
+
+.management-bar-right {
+	float: right;
+}
+
+.management-bar .management-bar-collapse {
+	@media screen and (min-width: $grid-float-breakpoint) {
+		float: left;
+	}
+}
+
+// management bar headers
+
+.management-bar-header,
+.management-bar-header-right {
+	> .checkbox,
+	> .radio {
+		float: left;
+		padding: $management-bar-padding-vertical 0;
+	}
+}
+
+.management-bar-header {
+	@extend .navbar-header;
+
+	float: left;
+}
+
+.management-bar-header-right {
+	> a {
+		display: block;
+		float: left;
+		padding: $management-bar-padding-vertical $management-bar-padding-horizontal;
+	}
+}
+
+.management-bar-header-item {
+	@extend .navbar-brand;
+}
+
+.management-bar-header-right {
+	@extend .navbar-header-right;
+
+	float: right;
+}
+
+.management-bar-item-title {
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+	max-width: 100%;
+
+	@include text-overflow();
+
+	@media screen and (min-width: $grid-float-breakpoint) {
+		max-width: 150px;
+	}
+}
+
+.management-bar-toggle {
+	@extend .navbar-toggle;
+
+	&:focus {
+		@include tab-focus;
+	}
+}
+
+.management-bar-toggle-link {
+	border-radius: 0;
+	border-width: 0;
+
+	&.management-bar-toggle {
+		margin: 0;
+		padding: $management-bar-padding-vertical $management-bar-padding-horizontal;
+	}
+
+	&:focus,
+	&:hover {
+		background-color: $nav-link-hover-bg;
+		text-decoration: none;
+	}
+}
+
+.management-bar-toggle-left {
+	@extend .navbar-toggle-left;
+}
+
+// management bar collapse
+
+.management-bar-collapse {
+	@extend .navbar-collapse;
+
+	background-color: $management-bar-collapse-bg;
+	border-color: transparent;
+	border-style: solid;
+	border-width: $management-bar-border-width;
+	clear: both;
+	left: -$management-bar-border-left-width;
+	position: absolute;
+	right: -$management-bar-border-right-width;
+	top: 100%;
+	z-index: 1001;
+
+	@media screen and (min-width: $grid-float-breakpoint) {
+		clear: none;
+		margin-top: 0;
+		position: static;
+	}
+}
+
+.management-bar-no-collapse .management-bar-nav {
+	float: left;
+	margin: 0;
+
+	&.management-bar-right {
+		float: right;
+	}
+
+	> li {
+		float: left;
+		margin-left: -1px;
+
+		&:first-child {
+			margin-left: 0;
+
+			> .checkbox,
+			> .radio {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+		> a {
+			padding-bottom: $management-bar-padding-vertical;
+			padding-top: $management-bar-padding-vertical;
+		}
+	}
+
+	.dropdown-menu {
+		border: 1px solid $dropdown-border;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+		position: absolute;
+	}
+}
+
+.management-bar-nav {
+	@extend .navbar-nav;
+
+	> li {
+		> .checkbox,
+		.management-bar-text {
+			padding: $management-bar-padding-vertical $management-bar-padding-horizontal;
+		}
+
+		.management-bar-text {
+			display: inline-block;
+		}
+	}
+}
+
+// Management Bar Skins
+
+.management-bar-default {
+	background-color: $management-bar-default-bg;
+	border-color: $management-bar-default-border;
+	color: $management-bar-default-color;
+
+	a {
+		color: $management-bar-default-link-color;
+	}
+
+	a.btn {
+		border: 1px solid $management-bar-default-border;
+		color: $management-bar-default-link-color;
+
+		&:focus {
+			background-color: $management-bar-default-link-active-bg;
+			color: $management-bar-default-link-active-color;
+		}
+	}
+
+	.management-bar-collapse {
+		background-color: $management-bar-default-bg;
+		border-color: $management-bar-default-border;
+	}
+
+	.nav {
+		> li > a,
+		> .dropdown > a {
+			color: $management-bar-default-link-color;
+
+			&:hover {
+				background-color: $management-bar-default-link-hover-bg;
+				color: $management-bar-default-link-hover-color;
+			}
+
+			&:focus {
+				background-color: $management-bar-default-link-active-bg;
+				color: $management-bar-default-link-active-color;
+			}
+		}
+
+		> .open > a {
+			border-color: $management-bar-default-border;
+		}
+
+		.open > a {
+			&,
+			&:focus {
+				background-color: $management-bar-default-link-active-bg;
+			}
+		}
+	}
+}
+
+.management-bar-default .btn {
+	&:focus,
+	&:hover {
+		background-color: $management-bar-default-link-hover-bg;
+		color: $management-bar-default-link-hover-color;
+	}
+}
